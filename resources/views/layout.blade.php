@@ -9,9 +9,10 @@
     <title>@yield('title', 'Blog de prueba')</title>
 </head>
 <body>
-    @include('partials/nav')
-    @yield('content')
-    @include('partials.session-status')
-    
+    <div id="app">
+        @include('partials/nav')
+        @yield('content')
+        @include('partials.session-status')
+    </div>
 </body>
 </html>
