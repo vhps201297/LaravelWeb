@@ -1,6 +1,6 @@
 @csrf 
 <div class="form-group">
-    <label for="title">Titulo de nuevo proyecto </label>
+    <label for="title">Titulo de proyecto </label>
     <input class="form-control shadow-sm"
     type="text" name="title" value="{{old('title', $project->title)}}">
 </div>
@@ -16,3 +16,4 @@
 </div>
 
 <button class="btn btn-primary btn-block active">{{$button_text}}</button>
+<a class="btn btn-link btn-block" href="{{route('proyectos.index')}}">Cancelar</a>
