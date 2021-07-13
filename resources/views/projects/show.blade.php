@@ -6,7 +6,7 @@
     <h1>{{$project->title}}</h1>
     @auth
         <a href={{route('proyectos.edit', $project)}}>Editar</a>
-        <form method="POST" action="{{route('proyectos.destroy', $project)}}"">
+        <form method="POST" action="{{route('proyectos.destroy', $project)}}">
             @csrf @method('DELETE')
             <button>Eliminar</button>
         </form>

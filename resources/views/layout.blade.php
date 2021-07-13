@@ -14,12 +14,12 @@
             @include('partials/nav')
             @include('partials.session-status')
         </header>
-        <main class="py-4">
+        <main class="py-4">     
             @yield('content')
         </main>
 
         <footer class="bg-white text-center py-3 text-black-50 shadow">
-            {{config('app.name')}} | Copyright @ {{date('d/m/y')}}   
+            {{config('app.name')}} | Copyright @ {{date('y')}}   
         </footer>
     </div>
 </body>

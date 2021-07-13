@@ -16,12 +16,12 @@ class MessageController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'subject' => 'required',
-            'content' => 'required|min:3'
+            'content' => 'required|min:5'
         ],[
             'subject.required' => 'Coloca un asunto' // Mensaje de validación personalizado 
         ]);
 
-        Mail::to('vhps201297@gmail.com')->send(new MessageReceived($message));
+        Mail::to('vhps201297@gmail.com')->queue(new MessageReceived($message));
         //return new MessageReceived($message);
         return back()->with('status', 'Se enviaron los datos con éxito');
     }
