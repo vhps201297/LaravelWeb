@@ -12,7 +12,7 @@
                 <a class="btn btn-primary btn-block active" 
                 href="{{route('contact')}}">Contáctame</a>
                 <a class="btn btn-block btn-outline-primary" 
-                href="{{'proyectos.index'}}">Mi portafolio</a>
+                href="{{route('proyectos.index')}}">Mi portafolio</a>
             </div>
 
             <div class="col-12 col-lg-6">
