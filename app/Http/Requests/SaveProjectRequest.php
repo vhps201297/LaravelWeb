@@ -31,6 +31,9 @@ class SaveProjectRequest extends FormRequest
             'url' => 
             Rule::unique('proyects')->ignore($this->route('project')),
             'description' => 'required',
+            'image' => [
+                $this->route('project') ? 'nullable': 'required', 
+                'mimes:png,jpg,jpeg']
         ];
     }
 

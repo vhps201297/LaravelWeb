@@ -14,20 +14,30 @@
         <p class="lead text-secondary">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, officiis magni recusandae error et facilis ratione distinctio architecto quo delectus.</p>
         
-        <ul class="list-group">
+        <div class="d-flex flex-wrap justify-content-between align-item-start">
+            
             @forelse ($projects as $project)
-                <li class="list-group-item border-0 mb-3 shadow-sm">
-                    <a class="text-secondary d-flex justify-content-between align-items-center" href={{route('proyectos.show', $project)}}>
-                        <span class="font-weight-bold ">{{$project->title}}</span> 
-                        <span class="text-black-50">{{$project->created_at->format('d-m-y')}}</span>
-                    </a>
+                <div class="card border-0 shadow-sm mx-auto mt-4" style="width:18rem;">
+                    @if ($project->image)
+                        <img class="card-img-top"
+                        src="/storage/{{$project->image}}" alt="{{$project->title}}">
+                    @endif
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="{{route('proyectos.show', $project)}}">{{$project->title}}</a>
+                        </h5>
+                        <h6 class="card-subtitle">{{$project->created_at->format('d-m-y')}}</h6>
+                        <p class="card-text text-truncate">{{$project->description}}</p>
+                        <a class="btn btn-primary btn-sm active" href="{{route('proyectos.show', $project)}}">Ver mas ...</a>
+                    </div>
                     
-                </li>
+                </div>
             @empty
                 <li class="list-group-item border-0 mb-3 shadow-sm">No hay elementos que mostrar.</li>
+                
             @endforelse
-    
-        </ul>  
+             
+        </div>
     </div>
     
 @endsection

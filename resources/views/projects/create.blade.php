@@ -10,6 +10,7 @@
                 @include('partials.validation_errors')
                 <form class="bg-white py-3 px-4 rounded" 
                     method="POST" 
+                    enctype="multipart/form-data"
                     action={{route('proyectos.store')}}>
                     <h1 class="display-4">Creación de un nuevo proyecto</h1>
                     <hr>
@@ -17,7 +18,5 @@
                 </form>
             </div>
         </div>
-        
     </div>
-    
 @endsection
