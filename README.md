@@ -20,8 +20,8 @@ conectado a una base de datos y haber realizado las migraciones correspondientes
 # Home   
 ![image](https://user-images.githubusercontent.com/21089847/125705180-7f114cff-3cfa-4789-a5ce-00d22dcde505.png)
 
-# Usuario (En edición)  
-![image](https://user-images.githubusercontent.com/21089847/125705435-830a87b7-ec15-4d59-b761-27ee5cede39f.png)
+# Usuario  
+![image](https://user-images.githubusercontent.com/21089847/125865157-6710e6b1-1c21-44ed-8f71-ee17f4699041.png)
 
 # Proyectos    
 Esta vista se generó al crear proyectos, conectándolo a una base de datos y utilizando Elocuent como ORM.  
