@@ -16,6 +16,11 @@
                     @method('PATCH')
                     <h1 class="display-4">Editar proyecto</h1>
                     <hr>
+                    @if ($project->image)
+                        <img class="img-fluid mb-3"
+                        src="/storage/{{$project->image}}" alt="{{$project->title}}">
+                        
+                    @endif
                     @include('projects._form', ['button_text' => 'Actualizar'])
                 </form>
             </div>            

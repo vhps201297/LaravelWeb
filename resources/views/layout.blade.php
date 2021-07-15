@@ -19,7 +19,7 @@
         </main>
 
         <footer class="bg-white text-center py-3 text-black-50 shadow">
-            {{config('app.name')}} | Copyright @ {{date('y')}}   
+            {{config('app.name')}} by Victor Pólito | Copyright @ {{date('Y')}}   
         </footer>
     </div>
 </body>

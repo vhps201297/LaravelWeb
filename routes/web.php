@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ProyectoController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,7 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 //Route::view('/home', 'home')->name('home');   
-Route::view('/user', 'usuario')->name('user');
+Route::get('/user', [UserController::class, '__invoke'])->name('user');
 
 Route::resource('/proyectos', ProyectoController::class)->parameters(['proyectos' => 'project']);
 
