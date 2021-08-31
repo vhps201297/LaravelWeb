@@ -8,8 +8,8 @@
 </p>
 
 Proyecto de prueba desarrollado con laravel, el cual se ocupan ciertas herramientas para entender el desarrollo en este framework. Este proyecto 
-fue desarrollado con MariaDB, MySql, Blade, Bootstrap, NodeJs. Para poder crear y editar proyectos se debera de hacer login, por lo que debe de estar 
-conectado a una base de datos y haber realizado las migraciones correspondientes.
+fue desarrollado con MySql, Blade, Bootstrap, NodeJs.   
+Para poder crear y editar proyectos se debera de hacer login, por lo que debe de estar conectado a una base de datos y haber realizado las migraciones correspondientes.
 
 ## Funcionalidades
 - Login
